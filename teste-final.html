@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civismo - Teste final</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <a href="index.html" class="logo"><img src="imagens/logo-civismo.png" alt="Logótipo Civismo para miúdos e graúdos"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+      <nav>
+        <ul id="menu-principal">
+          <li>
+            <button class="submenu-toggle" aria-expanded="false" aria-controls="submenu-situacoes">Situações</button>
+            <ul class="submenu" id="submenu-situacoes">
+              <li><a href="na-rua.html">Na Rua</a></li>
+              <li><a href="na-estrada.html">Na Estrada</a></li>
+              <li><a href="na-escola.html">Na Escola</a></li>
+              <li><a href="online.html">Online</a></li>
+              <li><a href="espacos-partilhados.html">Espaços Partilhados</a></li>
+            </ul>
+          </li>
+          <li><a href="o-que-e-civismo.html">O que é o civismo</a></li>
+          <li><a href="teste-final.html">Teste final</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Põe o teu civismo à prova</h1>
+    <p>Dez perguntas para testar ideias e escolhas. Algumas são sobre o que aprendeste; outras trazem situações novas. Escolhe a melhor das três respostas.</p>
+    <p><em>Uma pergunta de cada vez. A primeira resposta conta. Um clique esconde as opções e mostra a explicação.</em></p>
+
+    <div id="teste-container" style="margin-top: 3rem;">
+      <!-- O conteúdo do teste será injetado pelo JS -->
+    </div>
+    
+    <div id="compromisso-teste" style="display: none; margin-top: 4rem; background: var(--verde-tinta); color: var(--creme); padding: 3rem; border-radius: 12px; text-align: center;">
+      <h2 style="color: var(--mostarda);">O nosso compromisso cívico</h2>
+      <p style="font-size: 1.25rem; font-style: italic;">Vou estar presente. Vou ouvir. Vou discordar de boa-fé. Vou deixar a minha comunidade melhor do que a encontrei. Vou lembrar-me de que não estou só e de que as minhas ações têm efeitos para além de mim.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="compromisso"><a href="o-que-e-civismo.html#compromisso">O nosso compromisso cívico</a></p>
+      <p><a href="sobre.html#fontes">Sobre e fontes</a></p>
+      <p class="creditos">Carla Nave</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/teste.js"></script>
+  <script>
+    // Mostrar o compromisso no final do teste
+    const observer = new MutationObserver(() => {
+      const resultado = document.querySelector('.resultado-teste');
+      if (resultado) {
+        document.getElementById('compromisso-teste').style.display = 'block';
+        observer.disconnect();
+      }
+    });
+    observer.observe(document.getElementById('teste-container'), { childList: true, subtree: true });
+  </script>
+</body>
+</html>

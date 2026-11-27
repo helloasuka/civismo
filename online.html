@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civismo - Online</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-contexto="online">
+
+  <header>
+    <div class="container header-content">
+      <a href="index.html" class="logo"><img src="imagens/logo-civismo.png" alt="Logótipo Civismo para miúdos e graúdos"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+      <nav>
+        <ul id="menu-principal">
+          <li>
+            <button class="submenu-toggle" aria-expanded="false" aria-controls="submenu-situacoes">Situações</button>
+            <ul class="submenu" id="submenu-situacoes">
+              <li><a href="na-rua.html">Na Rua</a></li>
+              <li><a href="na-estrada.html">Na Estrada</a></li>
+              <li><a href="na-escola.html">Na Escola</a></li>
+              <li><a href="online.html">Online</a></li>
+              <li><a href="espacos-partilhados.html">Espaços Partilhados</a></li>
+            </ul>
+          </li>
+          <li><a href="o-que-e-civismo.html">O que é o civismo</a></li>
+          <li><a href="teste-final.html">Teste final</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="contexto-header">
+      <h1>Online</h1>
+    </div>
+
+    <!-- Situação 1 -->
+    <section id="situacao-1" class="situacao-container">
+      <span class="progresso">Situação 1 de 2</span>
+      <h2 tabindex="-1">Uma fotografia muito engraçada. Para quem?</h2>
+      <p>Tens uma fotografia engraçada de um amigo e queres publicá-la num grupo.</p>
+      <h3>O que fazes antes de partilhar?</h3>
+      <div class="opcoes">
+        <button class="opcao-btn" data-opcao="A" data-correta="false">A) Publico-a porque o grupo é só de amigos.</button>
+        <button class="opcao-btn" data-opcao="B" data-correta="true">B) Pergunto-lhe se posso partilhar e explico com quem.</button>
+        <button class="opcao-btn" data-opcao="C" data-correta="false">C) Publico primeiro e identifico-o para ele ver depois.</button>
+      </div>
+      
+      <div class="resultado">
+        <h3 tabindex="-1">Resultado</h3>
+        <div id="resultado-A" class="resultado-texto">
+          <p><strong>Errado neste caso.</strong></p>
+          <p>Mesmo entre amigos, a pessoa pode não querer a fotografia a circular.</p>
+        </div>
+        <div id="resultado-B" class="resultado-texto">
+          <p><strong>Certo.</strong></p>
+          <p>Assim, a pessoa pode escolher o que acontece à sua imagem.</p>
+        </div>
+        <div id="resultado-C" class="resultado-texto">
+          <p><strong>Errado neste caso.</strong></p>
+          <p>Avisar depois não lhe dá oportunidade de decidir antes da partilha.</p>
+        </div>
+        
+        <h4>A solução comum às três escolhas</h4>
+        <p>Pergunta antes de publicar e respeita a resposta. Uma imagem num grupo também pode ser guardada ou partilhada noutros lugares.</p>
+        <img src="imagens/solucao-online-foto.png" alt="Uma pessoa pergunta ao amigo se pode partilhar a fotografia no grupo.">
+        <h4>Um pequeno gesto para experimentar</h4>
+        <p>Pergunta: "Posso partilhar esta fotografia neste grupo?"</p>
+        
+        <button class="btn btn-verde btn-proxima" style="margin-top: 1rem;">Próxima situação →</button>
+      </div>
+    </section>
+
+    <!-- Situação 2 -->
+    <section id="situacao-2" class="situacao-container" style="display: none;">
+      <span class="progresso">Situação 2 de 2</span>
+      <h2 tabindex="-1">Toda a gente está a partilhar…</h2>
+      <p>Recebes uma mensagem com uma história embaraçosa sobre um colega. Não tem fonte e não sabes se é verdadeira.</p>
+      <h3>O que fazes?</h3>
+      <div class="opcoes">
+        <button class="opcao-btn" data-opcao="A" data-correta="false">A) Reencaminho depressa, antes de todos saberem.</button>
+        <button class="opcao-btn" data-opcao="B" data-correta="false">B) Partilho, mas acrescento "não sei se é verdade".</button>
+        <button class="opcao-btn" data-opcao="C" data-correta="true">C) Não espalho e procuro verificar com uma fonte fiável.</button>
+      </div>
+
+      <div class="resultado">
+        <h3 tabindex="-1">Resultado</h3>
+        <div id="resultado-A" class="resultado-texto">
+          <p><strong>Errado neste caso.</strong></p>
+          <p>A rapidez espalha uma história que pode ser falsa e magoar alguém.</p>
+        </div>
+        <div id="resultado-B" class="resultado-texto">
+          <p><strong>Errado neste caso.</strong></p>
+          <p>A dúvida escrita não impede que estejas a divulgar o rumor.</p>
+        </div>
+        <div id="resultado-C" class="resultado-texto">
+          <p><strong>Certo.</strong></p>
+          <p>Parar evita aumentar o dano e dá espaço para confirmar os factos.</p>
+        </div>
+
+        <h4>A solução comum às três escolhas</h4>
+        <p>Não é preciso divulgar para investigar. Se a mensagem humilha ou ameaça alguém, pede ajuda a uma pessoa de confiança, sem a espalhar.</p>
+        <img src="imagens/solucao-online-rumor.png" alt="Uma pessoa interrompe a partilha de uma mensagem duvidosa e procura verificar a informação.">
+        <h4>Um pequeno gesto para experimentar</h4>
+        <p>Antes de partilhar, pergunta: sei de onde isto veio?</p>
+
+        <button class="btn btn-verde btn-ver-outros" style="margin-top: 1rem;">Ver outros sítios e o teste final</button>
+      </div>
+    </section>
+
+    <!-- Conclusão -->
+    <section id="conclusao" style="display: none;">
+      <h2 tabindex="-1">Fim do contexto: Online</h2>
+      <p>Onde vamos a seguir?</p>
+      <div class="grelha-cartoes" style="margin-top: 2rem;">
+        <div class="cartao"><h3>Na Rua</h3><a href="na-rua.html" class="btn btn-outline">Explorar estas situações →</a></div>
+        <div class="cartao"><h3>Na Estrada</h3><a href="na-estrada.html" class="btn btn-outline">Explorar estas situações →</a></div>
+        <div class="cartao"><h3>Na Escola</h3><a href="na-escola.html" class="btn btn-outline">Explorar estas situações →</a></div>
+        <div class="cartao"><h3>Espaços Partilhados</h3><a href="espacos-partilhados.html" class="btn btn-outline">Explorar estas situações →</a></div>
+      </div>
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <button class="btn btn-azul btn-recomecar">Recomeçar este contexto</button>
+        <a href="teste-final.html" class="btn btn-mostarda">Fazer o teste final</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="compromisso"><a href="o-que-e-civismo.html#compromisso">O nosso compromisso cívico</a></p>
+      <p><a href="sobre.html#fontes">Sobre e fontes</a></p>
+      <p class="creditos">Carla Nave</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/contexto.js"></script>
+</body>
+</html>

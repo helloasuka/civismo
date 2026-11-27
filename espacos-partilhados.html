@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civismo - Espaços Partilhados</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-contexto="espacos-partilhados">
+
+  <header>
+    <div class="container header-content">
+      <a href="index.html" class="logo"><img src="imagens/logo-civismo.png" alt="Logótipo Civismo para miúdos e graúdos"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+      <nav>
+        <ul id="menu-principal">
+          <li>
+            <button class="submenu-toggle" aria-expanded="false" aria-controls="submenu-situacoes">Situações</button>
+            <ul class="submenu" id="submenu-situacoes">
+              <li><a href="na-rua.html">Na Rua</a></li>
+              <li><a href="na-estrada.html">Na Estrada</a></li>
+              <li><a href="na-escola.html">Na Escola</a></li>
+              <li><a href="online.html">Online</a></li>
+              <li><a href="espacos-partilhados.html">Espaços Partilhados</a></li>
+            </ul>
+          </li>
+          <li><a href="o-que-e-civismo.html">O que é o civismo</a></li>
+          <li><a href="teste-final.html">Teste final</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="contexto-header">
+      <h1>Espaços Partilhados</h1>
+    </div>
+
+    <!-- Situação 1 (Placeholder provisório) -->
+    <section id="situacao-1" class="situacao-container">
+      <span class="progresso">Situação 1 de 2</span>
+      <h2 tabindex="-1">O autocarro está cheio.</h2>
+      <p>Vais sentado no autocarro e uma senhora mais velha entra. Não há mais lugares livres.</p>
+      <h3>O que fazes?</h3>
+      <div class="opcoes">
+        <button class="opcao-btn" data-opcao="A" data-correta="false">A) Finjo que não vejo e continuo sentado.</button>
+        <button class="opcao-btn" data-opcao="B" data-correta="true">B) Levanto-me e cedo o meu lugar.</button>
+        <button class="opcao-btn" data-opcao="C" data-correta="false">C) Olho pela janela para evitar contacto visual.</button>
+      </div>
+      
+      <div class="resultado">
+        <h3 tabindex="-1">Resultado</h3>
+        <div id="resultado-A" class="resultado-texto">
+          <p><strong>Errado neste caso.</strong></p>
+          <p>Ignorar quem precisa de ajuda num espaço partilhado não é um gesto cívico.</p>
+        </div>
+        <div id="resultado-B" class="resultado-texto">
+          <p><strong>Certo.</strong></p>
+          <p>Ceder o lugar é um pequeno gesto que faz uma grande diferença para quem está de pé.</p>
+        </div>
+        <div id="resultado-C" class="resultado-texto">
+          <p><strong>Errado neste caso.</strong></p>
+          <p>Evitar a situação não resolve a necessidade da outra pessoa.</p>
+        </div>
+        
+        <h4>A solução comum às três escolhas</h4>
+        <p>Num espaço partilhado, reparar nos outros e ceder o lugar quando necessário é uma forma simples de cuidar da vida em comum.</p>
+        <img src="imagens/solucao-partilhados-mochila.png" alt="Um jovem cede o lugar no autocarro a uma senhora idosa.">
+        <h4>Um pequeno gesto para experimentar</h4>
+        <p>Antes de te sentares, olha à tua volta para ver se alguém precisa mais do lugar.</p>
+        
+        <button class="btn btn-verde btn-proxima" style="margin-top: 1rem;">Próxima situação →</button>
+      </div>
+    </section>
+
+    <!-- Situação 2 -->
+    <section id="situacao-2" class="situacao-container" style="display: none;">
+      <span class="progresso">Situação 2 de 2</span>
+      <h2 tabindex="-1">O teu vídeo tem público involuntário.</h2>
+      <p>Estás a ver um vídeo com som numa sala de espera. Uma pessoa pede-te que tires o som.</p>
+      <h3>Como respondes?</h3>
+      <div class="opcoes">
+        <button class="opcao-btn" data-opcao="A" data-correta="false">A) Digo: "É público, também tenho direito a ouvir."</button>
+        <button class="opcao-btn" data-opcao="B" data-correta="false">B) Ignoro o pedido e aumento o volume.</button>
+        <button class="opcao-btn" data-opcao="C" data-correta="true">C) Uso auscultadores ou pauso o vídeo.</button>
+      </div>
+
+      <div class="resultado">
+        <h3 tabindex="-1">Resultado</h3>
+        <div id="resultado-A" class="resultado-texto">
+          <p><strong>Errado neste caso.</strong></p>
+          <p>O espaço ser partilhado também exige considerar quem não escolheu ouvir.</p>
+        </div>
+        <div id="resultado-B" class="resultado-texto">
+          <p><strong>Errado neste caso.</strong></p>
+          <p>Aumentar o incómodo transforma um pedido simples num conflito.</p>
+        </div>
+        <div id="resultado-C" class="resultado-texto">
+          <p><strong>Certo.</strong></p>
+          <p>Respondes ao pedido e deixas de impor o som à sala.</p>
+        </div>
+
+        <h4>A solução comum às três escolhas</h4>
+        <p>Podes ouvir com auscultadores ou guardar o vídeo para depois. Uma mudança pequena permite que cada pessoa use o espaço com mais tranquilidade.</p>
+        <img src="imagens/solucao-partilhados-som.png" alt="Uma pessoa vê o vídeo com auscultadores, enquanto a sala de espera permanece tranquila.">
+        <h4>Um pequeno gesto para experimentar</h4>
+        <p>Antes de ligar o som, pensa em quem o vai ouvir.</p>
+
+        <button class="btn btn-verde btn-ver-outros" style="margin-top: 1rem;">Ver outros sítios e o teste final</button>
+      </div>
+    </section>
+
+    <!-- Conclusão -->
+    <section id="conclusao" style="display: none;">
+      <h2 tabindex="-1">Fim do contexto: Espaços Partilhados</h2>
+      <p>Onde vamos a seguir?</p>
+      <div class="grelha-cartoes" style="margin-top: 2rem;">
+        <div class="cartao"><h3>Na Rua</h3><a href="na-rua.html" class="btn btn-outline">Explorar estas situações →</a></div>
+        <div class="cartao"><h3>Na Estrada</h3><a href="na-estrada.html" class="btn btn-outline">Explorar estas situações →</a></div>
+        <div class="cartao"><h3>Na Escola</h3><a href="na-escola.html" class="btn btn-outline">Explorar estas situações →</a></div>
+        <div class="cartao"><h3>Online</h3><a href="online.html" class="btn btn-outline">Explorar estas situações →</a></div>
+      </div>
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <button class="btn btn-azul btn-recomecar">Recomeçar este contexto</button>
+        <a href="teste-final.html" class="btn btn-mostarda">Fazer o teste final</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="compromisso"><a href="o-que-e-civismo.html#compromisso">O nosso compromisso cívico</a></p>
+      <p><a href="sobre.html#fontes">Sobre e fontes</a></p>
+      <p class="creditos">Carla Nave</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/contexto.js"></script>
+</body>
+</html>
